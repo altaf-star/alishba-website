@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Alishba ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-heart">
+            <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="lgGrad" cx="50%" cy="50%" r="60%">
+                        <stop offset="0%" style="stop-color:#ff9ec4"/>
+                        <stop offset="100%" style="stop-color:#c0392b"/>
+                    </radialGradient>
+                </defs>
+                <path d="M50,80 C50,80 8,50 8,25 C8,12 18,3 30,3 C38,3 45,8 50,14 C55,8 62,3 70,3 C82,3 92,12 92,25 C92,50 50,80 50,80Z" fill="url(#lgGrad)"/>
+            </svg>
+        </div>
+        <p class="loading-text">Loading something beautiful for you...</p>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Floating Hearts Background -->
+    <div id="hearts-bg"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mouse Trail Canvas -->
+    <canvas id="trail-canvas"></canvas>
+
+    <!-- Music Button -->
+    <button id="music-btn" title="Play/Pause Music">
+        <span id="music-icon">♪</span>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Heart Rain Container -->
+    <div id="heart-rain"></div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-box"></div>
+
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">✨ A place made just for you ✨</div>
+
+            <h1 class="hero-title">
+                To The Most<br>
+                <span class="gradient-text">Beautiful Girl</span><br>
+                In My World
+            </h1>
+
+            <p class="hero-sub">
+                Every moment with you turns ordinary days into unforgettable memories, Alishba.
+            </p>
+
+            <div class="nicknames">
+                <span>My Snowball</span>
+                <span>My Velvet</span>
+                <span>Paroo</span>
+                <span>My World</span>
+                <span>Cutie Patootie</span>
+                <span>My Baby</span>
+                <span>My Jaan</span>
+                <span>Bubbles</span>
+                <span>My Innocent Baby</span>
+            </div>
+
+            <button id="open-heart-btn" class="glow-btn">Open My Heart ❤️</button>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         LOVE LETTER SECTION
+    ══════════════════════════════════════ -->
+    <section id="love-letter" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">💌 From My Heart</span>
+            <h2>A Letter For You</h2>
+        </div>
+
+        <div class="letter-card fade-in">
+            <div class="quote-mark top">❝</div>
+            <div class="quote-mark bottom">❞</div>
+            <div id="letter-text" class="letter-body"></div>
+            <div class="letter-sig">
+                Forever yours,<br>
+                <span>The one who loves you most ❤️</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         LOVE — DISTANCE SECTION
+    ══════════════════════════════════════ -->
+    <section id="love-distance" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">🌍 Distance Changes Nothing</span>
+            <h2>I Am Always Here For You</h2>
+            <p class="section-sub">No matter where I am in this world, my heart is always with you.</p>
+        </div>
+
+        <div class="distance-grid">
+
+            <div class="d-card fade-in" style="--d:0.1s">
+                <div class="d-icon">💞</div>
+                <h3>My Love Has No Distance</h3>
+                <p>
+                    No matter how many miles stand between us, my heart is always right next to yours.
+                    Distance is just a number — it has never been able to measure what I feel for you.
+                    When you wake up in the morning, I am thinking of you. When you go to sleep at night,
+                    I am still thinking of you. You are never truly alone, Alishba, because I carry you
+                    with me everywhere I go.
+                </p>
+            </div>
+
+            <div class="d-card fade-in" style="--d:0.2s">
+                <div class="d-icon">🛡️</div>
+                <h3>I Am Always There For You</h3>
+                <p>
+                    On your hardest days — when everything feels heavy and the world feels too loud —
+                    I want you to know that I am there. Maybe not physically beside you, but I am
+                    always one message, one call, one heartbeat away. You will never have to face anything
+                    alone. I will always pick up. I will always show up. I will always be your safe place,
+                    no matter what time it is or where in the world I am.
+                </p>
+            </div>
+
+            <div class="d-card fade-in" style="--d:0.3s">
+                <div class="d-icon">🌙</div>
+                <h3>Even When Far, I Choose You</h3>
+                <p>
+                    Being far from you does not make me love you less — it makes me love you more.
+                    Every day apart is a reminder of how much you mean to me, of how much I cannot wait
+                    to be with you again. You are the reason I look forward to tomorrow. You are what
+                    I miss most and what I am most grateful for at the same time. Even when I am far,
+                    my love is always close to you.
+                </p>
+            </div>
+
+            <div class="d-card fade-in" style="--d:0.4s">
+                <div class="d-icon">🔥</div>
+                <h3>Nothing Can Change This</h3>
+                <p>
+                    Bad moods, hard weeks, stress, distance, silence — none of it can change how I feel
+                    about you. I have chosen you, Alishba. Not just on the easy days, not just when things
+                    are perfect, but every single day, in every version of you. I am not going anywhere —
+                    not physically, not emotionally, not in my heart. You are stuck with me, and I would
+                    not have it any other way.
+                </p>
+            </div>
+
+            <div class="d-card fade-in" style="--d:0.5s">
+                <div class="d-icon">🌹</div>
+                <h3>My Love Is Unconditional</h3>
+                <p>
+                    I love you on your good days and your bad days. I love you when you are easy to love
+                    and when you are a little harder to reach. I love you when you are laughing and when
+                    you are crying. I love you quietly and loudly, in all the ways I know how. There is no
+                    version of you that I would walk away from — every part of you is welcomed here, always.
+                </p>
+            </div>
+
+            <div class="d-card fade-in" style="--d:0.6s">
+                <div class="d-icon">✈️</div>
+                <h3>The Wait Is Worth It</h3>
+                <p>
+                    Every moment we are apart is a moment I am counting down to be with you again.
+                    The distance is temporary. What we have is not. I would cross every mile, every time
+                    zone, every obstacle this world puts in front of me — because you, Alishba Arham,
+                    are worth every single step. Always were. Always will be.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         OUR PHOTO SECTION
+    ══════════════════════════════════════ -->
+    <section id="our-photo" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">📸 Us</span>
+            <h2>Our First Chapter Together</h2>
+            <p class="section-sub">February 5, 2026 — a day I will never forget.</p>
+        </div>
+
+        <div class="photo-wrap fade-in">
+            <div class="photo-frame">
+                <img src="Alishba-Abdullah.jpg" alt="Me & Alishba — February 5, 2026">
+                <div class="photo-caption-overlay">
+                    <p class="photo-date">February 5, 2026</p>
+                    <p class="photo-cap">The day my world got even more beautiful ❤️</p>
+                </div>
+            </div>
+            <div class="photo-quote fade-in">
+                "Some moments you don't just remember — you feel them forever."
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         REASONS I LOVE YOU
+    ══════════════════════════════════════ -->
+    <section id="reasons" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">💝 Written In Stars</span>
+            <h2>Reasons I Love You</h2>
+            <p class="section-sub">Just a few of the infinite reasons, Snowball.</p>
+        </div>
+
+        <div class="reasons-grid">
+            <div class="r-card fade-in" style="--d:0.05s"><div class="r-icon">😊</div><h3>Your Smile</h3><p>It lights up every room and every corner of my heart</p></div>
+            <div class="r-card fade-in" style="--d:0.1s"><div class="r-icon">😂</div><h3>Your Laugh</h3><p>The most beautiful sound I have ever heard</p></div>
+            <div class="r-card fade-in" style="--d:0.15s"><div class="r-icon">🌸</div><h3>Your Kindness</h3><p>The way you care for others is rare and precious</p></div>
+            <div class="r-card fade-in" style="--d:0.2s"><div class="r-icon">💪</div><h3>Your Strength</h3><p>Even on your weakest days, you are stronger than you know</p></div>
+            <div class="r-card fade-in" style="--d:0.25s"><div class="r-icon">🧠</div><h3>Your Intelligence</h3><p>The way your mind works amazes me every single time</p></div>
+            <div class="r-card fade-in" style="--d:0.3s"><div class="r-icon">🔒</div><h3>Your Loyalty</h3><p>You stand by the people you love — and that is everything</p></div>
+            <div class="r-card fade-in" style="--d:0.35s"><div class="r-icon">👁️</div><h3>Your Beautiful Eyes</h3><p>I could get lost in them and never want to find my way back</p></div>
+            <div class="r-card fade-in" style="--d:0.4s"><div class="r-icon">💖</div><h3>Your Caring Nature</h3><p>The love you give without expecting anything in return</p></div>
+            <div class="r-card fade-in" style="--d:0.45s"><div class="r-icon">✨</div><h3>Your Confidence</h3><p>The quiet strength in the way you carry yourself</p></div>
+            <div class="r-card fade-in" style="--d:0.5s"><div class="r-icon">🕊️</div><h3>Your Honesty</h3><p>You are real, raw, and refreshingly genuine</p></div>
+            <div class="r-card fade-in" style="--d:0.55s"><div class="r-icon">🤝</div><h3>Your Support</h3><p>You believe in me even when I do not believe in myself</p></div>
+            <div class="r-card fade-in" style="--d:0.6s"><div class="r-icon">🌹</div><h3>Everything About You</h3><p>Every flaw, every quirk, every little thing — all of it is perfect to me</p></div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         MEMORY TIMELINE
+    ══════════════════════════════════════ -->
+    <section id="timeline" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">🕰️ Our Story</span>
+            <h2>Our Journey Together</h2>
+        </div>
+
+        <div class="timeline-wrap">
+            <div class="tl-line"></div>
+
+            <div class="tl-item left fade-in">
+                <div class="tl-dot">💬</div>
+                <div class="tl-box">
+                    <span class="tl-date">The Beginning</span>
+                    <h3>When It All Started</h3>
+                    <p>The moment you first entered my world, everything felt different. Something shifted — and I knew this person was going to mean everything to me.</p>
+                </div>
+            </div>
+
+            <div class="tl-item right fade-in">
+                <div class="tl-dot">😂</div>
+                <div class="tl-box">
+                    <span class="tl-date">A Moment I Treasure</span>
+                    <h3>First Laugh Together</h3>
+                    <p>The moment you made me laugh so genuinely I forgot everything else. That is when I knew your energy was something I never wanted to lose.</p>
+                </div>
+            </div>
+
+            <div class="tl-item left fade-in">
+                <div class="tl-dot">📸</div>
+                <div class="tl-box">
+                    <span class="tl-date">February 5, 2026</span>
+                    <h3>Our First Meetup ❤️</h3>
+                    <p>The mirror selfie. The shopping store. The day we finally stood in the same space. That picture holds more feeling than any words I could write. You were even more beautiful in real life, Alishba.</p>
+                </div>
+            </div>
+
+            <div class="tl-item right fade-in">
+                <div class="tl-dot">🌟</div>
+                <div class="tl-box">
+                    <span class="tl-date">Today</span>
+                    <h3>Right Now</h3>
+                    <p>Wherever you are reading this, know that I am thinking of you. Today, tomorrow, always — you are on my mind and in my heart without fail.</p>
+                </div>
+            </div>
+
+            <div class="tl-item left fade-in">
+                <div class="tl-dot">🌅</div>
+                <div class="tl-box">
+                    <span class="tl-date">Our Future</span>
+                    <h3>Everything Ahead of Us</h3>
+                    <p>More memories to make. More laughs to share. More moments to photograph. I cannot wait to live every single one of them with you, my Paroo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         INTERACTIVE HEART
+    ══════════════════════════════════════ -->
+    <section id="heart-section" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">❤️ Beating For You</span>
+            <h2>My Heart</h2>
+            <p class="section-sub">Every beat has your name on it.</p>
+        </div>
+
+        <div class="heart-wrap fade-in">
+            <div id="big-heart">
+                <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="hGrad" cx="40%" cy="35%" r="65%">
+                            <stop offset="0%" style="stop-color:#ff9ec4"/>
+                            <stop offset="60%" style="stop-color:#ff6b9d"/>
+                            <stop offset="100%" style="stop-color:#a0203e"/>
+                        </radialGradient>
+                        <filter id="hGlow">
+                            <feGaussianBlur stdDeviation="3" result="blur"/>
+                            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                        </filter>
+                    </defs>
+                    <path d="M50,80 C50,80 8,50 8,25 C8,12 18,3 30,3 C38,3 45,8 50,14 C55,8 62,3 70,3 C82,3 92,12 92,25 C92,50 50,80 50,80Z"
+                          fill="url(#hGrad)" filter="url(#hGlow)"/>
+                </svg>
+            </div>
+            <p class="heart-counter">Times I've chosen you: <span class="counter-val">Infinite ♾️</span></p>
+            <p class="heart-hint">Click the heart 💭</p>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         MINI GAME
+    ══════════════════════════════════════ -->
+    <section id="mini-game" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">🎮 A Little Game</span>
+            <h2>Do You Know?</h2>
+        </div>
+
+        <div class="game-card fade-in">
+            <div id="game-q">
+                <h3>Do you know how much I love you?</h3>
+                <div class="game-btns">
+                    <button class="game-opt" onclick="pickAnswer(this)">A Lot</button>
+                    <button class="game-opt" onclick="pickAnswer(this)">Very Much</button>
+                    <button class="game-opt" onclick="pickAnswer(this)">Infinite</button>
+                    <button class="game-opt" onclick="pickAnswer(this)">No Matter What</button>
+                </div>
+            </div>
+            <div id="game-result" class="hidden">
+                <div class="result-emoji">🎉</div>
+                <h3>Correct Answer:</h3>
+                <p class="result-big">More than that ❤️</p>
+                <p class="result-small">No number, no word, no language can contain how much I love you, Bubbles.</p>
+                <button class="glow-btn" onclick="resetGame()">Play Again</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         PROMISES SECTION
+    ══════════════════════════════════════ -->
+    <section id="promises" class="page-section">
+        <div class="section-header fade-in">
+            <span class="badge">🤝 My Word To You</span>
+            <h2>My Promises</h2>
+            <p class="section-sub">Words I mean with everything I have, My Jaan.</p>
+        </div>
+
+        <div class="promises-list">
+            <div class="promise fade-in" style="--d:0.1s">
+                <div class="p-num">01</div>
+                <div class="p-text"><h3>I promise to always listen</h3><p>Not just hear your words, but truly understand what you are feeling, even when you cannot find the words yourself.</p></div>
+            </div>
+            <div class="promise fade-in" style="--d:0.2s">
+                <div class="p-num">02</div>
+                <div class="p-text"><h3>I promise to support you</h3><p>In every dream you chase, every goal you set, every path you choose — I will be right there behind you, believing in you.</p></div>
+            </div>
+            <div class="promise fade-in" style="--d:0.3s">
+                <div class="p-num">03</div>
+                <div class="p-text"><h3>I promise to respect you</h3><p>Your feelings, your boundaries, your thoughts — always and without question, no matter what.</p></div>
+            </div>
+            <div class="promise fade-in" style="--d:0.4s">
+                <div class="p-num">04</div>
+                <div class="p-text"><h3>I promise to always be there</h3><p>Even when I am far away, I will never truly be gone. One call, one message — and I am right there with you.</p></div>
+            </div>
+            <div class="promise fade-in" style="--d:0.5s">
+                <div class="p-num">05</div>
+                <div class="p-text"><h3>I promise to keep choosing you</h3><p>Every single day, in every mood, in every version of you — I will choose you again and again without hesitation.</p></div>
+            </div>
+            <div class="promise fade-in" style="--d:0.6s">
+                <div class="p-num">06</div>
+                <div class="p-text"><h3>I promise to love all of you</h3><p>Your light, your darkness, your quiet, your chaos — every part of you is welcomed here, always and unconditionally.</p></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         FINAL SECTION
+    ══════════════════════════════════════ -->
+    <section id="final" class="page-section">
+        <div class="final-inner fade-in">
+            <p class="final-top">If today feels heavy,</p>
+            <h2 class="final-main" id="final-words-el"></h2>
+            <div class="final-love-el" id="final-love-el"></div>
+            <div class="final-names">
+                <span>Alishba</span>
+                <span class="hd">❤️</span>
+                <span>Forever</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
